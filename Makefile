@@ -2,10 +2,10 @@ cc = gcc
 
 CFLAGS = 
 all: run
-run: tm.o
+run: tm
 	./tm.o sample.tm
 
-tree: main.o
+tree: tiny
 	./main sample.tny
 
 tiny: main.o util.o scan.o parse.o symtab.o analyze.o code.o cgen.o

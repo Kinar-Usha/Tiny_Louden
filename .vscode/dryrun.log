@@ -1,5 +1,6 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/kinar/tiny'
-./tm.o sample.tm
+cc    -c -o tm.o tm.c
+./tm sample.tm
 make: Leaving directory '/home/kinar/tiny'
  
