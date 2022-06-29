@@ -1,0 +1,1 @@
+{"buildTargets":["analyze.o","cgen.o","clean","code.o","main.o","parse.o","scan.o","symtab.o","tiny","tm","util.o"],"launchTargets":["/home/kinar/tiny>main()"],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

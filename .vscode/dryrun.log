@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/kinar/tiny'
+gcc -g main.o util.o scan.o parse.o symtab.o analyze.o code.o cgen.o -o main
+make: Leaving directory '/home/kinar/tiny'
+ 
