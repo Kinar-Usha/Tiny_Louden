@@ -1,6 +1,12 @@
 cc = gcc
 
 CFLAGS = 
+all: run
+run: tm.o
+	./tm.o sample.tm
+
+tree: main.o
+	./main sample.tny
 
 tiny: main.o util.o scan.o parse.o symtab.o analyze.o code.o cgen.o
 	gcc -g $^ -o main
@@ -34,4 +40,4 @@ clean:
 	rm -f tiny main.o util.o scan.o parse.o symtab.o analyze.o code.o cgen.o lex/lex.yy.c yacc/tiny.tab.c  
 
 tm: tm.c
-	gcc -g tm.c
+	gcc -g tm.c -o tm.o
